@@ -14,11 +14,13 @@ Use relative paths so that the same can be reflected on other machine when repo 
 `mklink /D "Symblink1" "..\Target"`
 
 ![Alt text](media/Symblink-01-indicationVSCODE.png)\
-When link is created a arrow would be represented in front of the folder hightlighting it as Symblink
+When link is created a arrow would be represented in front of the folder hightlighting it as Symblink. Also see which files are automatically considered for tracking.
 
-> When creating files inside the target folder. git automatically ignores the files which are virtually available inside symblinks and only tracks the ones in the target
+> When creating files inside the target folder. 
+> git automatically ignores the files which are virtually available inside symblinks and only tracks the ones in the target
 ![Alt text](<media/Symblink-02-Git tracking.png>)
->We can see that only target files are being staged and symblink files are not shown as `leftovers`. Added the actual commit reference so you can browse the repo at this history.
+> We can see that only target files are being staged and symblink files are not shown as `leftovers` and are not being shown as `untracked` in outliner.
+> Added the actual commit reference so you can browse the repo at this history.
 > https://github.com/AgastyaPatel/SymblinkGuide/commit/e5498d2848d657f32a75feb59541dcb7d6490abd
 
 ### Clone Configuration
